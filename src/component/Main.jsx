@@ -1,8 +1,10 @@
-import Easy from "./option page/Easy";
+// import Easy from "./option page/Easy";
+import Hard from "./option page/Hard";
 
 const Main = () => {
     return ( <div className="main">
-    <Easy />
+    {/* <Easy /> */}
+    <Hard />
     </div> );
 }
  

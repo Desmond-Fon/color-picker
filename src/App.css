@@ -81,6 +81,21 @@
   align-items: center;
 }
 
+.hard{
+  display: flex;
+ /* flex-wrap: wrap; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 500px; */
+}
+
+.individual{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .box{
   height: 120px;
   width: 120px;
