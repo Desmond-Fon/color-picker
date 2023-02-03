@@ -13,6 +13,10 @@
   height: 100px;
 }
 
+h1 {
+  font-size: medium;
+}
+
 .header {
   background: rgb(99, 99, 163);
   color: white;
@@ -26,46 +30,46 @@
   background: gray;
 }
 
-.start{
-   padding: 10px;
-   border-radius: 15px;
-   border: none;
-   font-weight: bold;
+.start {
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
 }
 
-.score{
+.score {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-weight: bold;
 }
 
-.score-number{
+.score-number {
   font-size: larger;
   /* font-weight: bold; */
 }
 
-.toggler{
+.toggler {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
 }
 
-.toggle-level{
+.toggle-level {
   font-weight: bold;
 }
 
-.level{
+.level {
   padding: 5px;
-   border-radius: 15px;
-   border: none;
-   font-weight: bold;
-   margin-top: 8px;
-   width: 50%;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  margin-top: 8px;
+  width: 50%;
 }
 
-.main{
+.main {
   padding: 30px;
   display: flex;
   justify-content: space-between;
@@ -74,29 +78,29 @@
   height: 100%;
 }
 
-.easy{
+.easy {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
 
-.hard{
+.hard {
   display: flex;
- /* flex-wrap: wrap; */
+  /* flex-wrap: wrap; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
   /* height: 500px; */
 }
 
-.individual{
+.individual {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.box{
+.box {
   height: 120px;
   width: 120px;
   background: #000;
