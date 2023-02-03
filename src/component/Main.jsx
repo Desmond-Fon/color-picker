@@ -1,11 +1,11 @@
 // import Easy from "./option page/Easy";
 import Hard from "./option page/Hard";
 
-const Main = () => {
+const Main = ({colorOptions, getValue, hide, win, colors}) => {
   return (
-    <div className="main">
+    <div className="main" style={{ backgroundColor: win ? `rgb(${colors})` : '' }}>
       {/* <Easy /> */}
-      <Hard />
+      <Hard colorOptions={colorOptions} getValue={getValue} hide={hide} win={win}/>
     </div>
   );
 };
