@@ -33,11 +33,12 @@ function App() {
   ];
 
   const newList = shuffle(colorOptions);
-
+  // window.location.reload();
+  // window.location.reload(false);
   // const [headerColor, setHeaderColor] = useState(color);
-  const [verdict, setVerdict] = useState('PLAY AGAIN');
+  const [verdict, setVerdict] = useState('TRY AGAIN');
   const [win, setWin] = useState(false);
-  const [hide, setHide] = useState(false);
+ 
   const [score, setScore] = useState(0);
   console.log(colorOptions);
 
@@ -53,28 +54,37 @@ function App() {
     {
       console.log('win');
       setWin(true)
-      console.log(win);
-      setVerdict('TRY AGAIN')
+      setVerdict('PLAY AGAIN')
       setScore(prevActiveStep => prevActiveStep + 1)
+      return;
     }
     else{
       console.log('lose');
       // e.currentTarget.classList.add('hide');
-      setHide(true)
+    // setHide(true)
       if(score !== 0){
 
         setScore(prevActiveStep => prevActiveStep - 1)
       }
       setWin(false)
+      return;
     }
 
   }
 
   return (
-    <div>
+    <div className="app">
       <Header headerColor={color}/>
       <Section verdict={verdict} refreshPage={refreshPage} score={score}/>
-      <Main colorOptions={newList} getValue={getValue} hide={hide} win={win} colors={color}/>
+      <Main colorOptions={newList} getValue={getValue} 
+      // hide={hide}
+       win={win} 
+       colors={color} 
+       setWin={setWin}
+      //  setScore={setScore}
+       setVerdict={setVerdict}
+      //  setHide={setHide}
+       />
     </div>
   );
 }

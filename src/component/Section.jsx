@@ -3,11 +3,11 @@ const Section = ({verdict, refreshPage, score}) => {
         <div><button className="start" onClick={refreshPage}>
             {verdict}
             </button></div>
-        <div className="score">
-            <p>SCORE</p>
-            <p className="score-number">
-            {score}
-            </p></div>
+        {/* <div className="score"> */}
+            {/* <p>SCORE</p> */}
+            {/* <p className="score-number"> */}
+            {/* {score} */}
+            {/* </p></div> */}
         <div className="toggler">
             <p className="toggle-level">Toggle Level</p>
             <button className="level">

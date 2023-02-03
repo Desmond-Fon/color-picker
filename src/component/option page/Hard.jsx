@@ -1,12 +1,12 @@
 import Individual from "./Individual";
 
-const Hard = ({ colorOptions, getValue, hide, win }) => {
+const Hard = ({ colorOptions, getValue, hide, win, setWin, colors, setScore, setVerdict}) => {
   return (
     <>
       <div className="hard">
         <div className="individual">
-          {colorOptions.map((item) => {
-            return <Individual getValue={getValue} hide={hide} item={item} win={win}/>;
+          {colorOptions.map((item, index) => {
+            return <Individual getValue={getValue} hide={hide} colors={colors} setVerdict={setVerdict} setScore={setScore} setWin={setWin} item={item} win={win} index={index} key={(Math.random() * 1000)}/>;
           })}
         </div>
       </div>
