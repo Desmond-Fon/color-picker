@@ -1,10 +1,17 @@
-const Easy = () => {
+import Individual from "./Individual";
+
+const Easy = ({ easyNewList, getValue, hide, win, setWin, colors, setScore, setVerdict}) => {
   return (
-    <div className="easy">
-      <div className="box">1</div>
-      <div className="box">2</div>
-      <div className="box">3</div>
-    </div>
+    <>
+    {win ? <h1 className="correct">CORRECT!</h1> :
+      <div className="hard">
+        <div className="individual">
+          {easyNewList.map((item, index) => {
+            return <Individual getValue={getValue} hide={hide} colors={colors} setVerdict={setVerdict} setScore={setScore} setWin={setWin} item={item} win={win} index={index} key={(Math.random() * 1000)}/>;
+          })}
+        </div>
+      </div>}
+    </>
   );
 };
 

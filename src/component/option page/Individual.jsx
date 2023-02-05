@@ -35,7 +35,7 @@ const Individual = ({ item, colors, setWin, setVerdict, setScore }) => {
   return (
     <>
     <button
-        key={item.index}
+        // key={item.index}
         id={item}
         value={item}
         onClick={getValues}

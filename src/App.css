@@ -132,3 +132,11 @@ h1 {
 .hidden{
   display: hidden;
 }
+
+.correct{
+  border: 7px solid gray;
+  padding: 10px;
+  font-size: xx-large;
+  margin-top: 50px;
+  color: white;
+}
